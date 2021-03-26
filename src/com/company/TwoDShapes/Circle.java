@@ -1,4 +1,6 @@
 package com.company.TwoDShapes;
 
-public class Circle {
+import com.company.AbstractClases.PlaneShape;
+
+public class Circle extends PlaneShape {
 }

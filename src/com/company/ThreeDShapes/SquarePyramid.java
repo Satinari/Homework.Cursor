@@ -1,4 +1,6 @@
 package com.company.ThreeDShapes;
 
-public class SquarePyramid {
+import com.company.AbstractClases.SpaceShape;
+
+public class SquarePyramid extends SpaceShape {
 }

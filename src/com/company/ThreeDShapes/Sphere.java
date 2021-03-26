@@ -1,4 +1,6 @@
 package com.company.ThreeDShapes;
 
-public class Sphere {
+import com.company.AbstractClases.SpaceShape;
+
+public class Sphere extends SpaceShape {
 }

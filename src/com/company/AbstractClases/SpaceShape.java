@@ -1,4 +1,6 @@
 package com.company.AbstractClases;
 
-public class SpaceShape {
+import com.company.Interfaces.VolumeMeasurable;
+
+public abstract class SpaceShape extends Shape implements VolumeMeasurable {
 }

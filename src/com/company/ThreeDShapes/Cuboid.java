@@ -1,4 +1,6 @@
 package com.company.ThreeDShapes;
 
-public class Cuboid {
+import com.company.AbstractClases.SpaceShape;
+
+public class Cuboid extends SpaceShape {
 }

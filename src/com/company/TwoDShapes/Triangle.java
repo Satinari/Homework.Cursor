@@ -1,4 +1,6 @@
 package com.company.TwoDShapes;
 
-public class Triangle {
+import com.company.AbstractClases.PlaneShape;
+
+public class Triangle extends PlaneShape {
 }
