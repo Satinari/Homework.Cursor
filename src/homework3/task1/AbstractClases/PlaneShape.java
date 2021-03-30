@@ -1,7 +1,7 @@
-package com.company.AbstractClases;
+package homework3.task1.AbstractClases;
 
-import com.company.Interfaces.PerimeterMeasurable;
-import com.company.Vertexes.Vertex;
+import homework3.task1.Interfaces.PerimeterMeasurable;
+import homework3.task1.Vertexes.Vertex;
 
 public abstract class PlaneShape extends Shape implements PerimeterMeasurable {
     public Vertex[] arrayOfVertexes;

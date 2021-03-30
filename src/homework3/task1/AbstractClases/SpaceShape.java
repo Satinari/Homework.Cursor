@@ -1,7 +1,7 @@
-package com.company.AbstractClases;
+package homework3.task1.AbstractClases;
 
-import com.company.Interfaces.VolumeMeasurable;
-import com.company.Vertexes.Vertex3D;
+import homework3.task1.Interfaces.VolumeMeasurable;
+import homework3.task1.Vertexes.Vertex3D;
 
 public abstract class SpaceShape extends Shape implements VolumeMeasurable {
     public Vertex3D[] arrayOfVertexes3D;

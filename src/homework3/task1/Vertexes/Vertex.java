@@ -1,4 +1,4 @@
-package com.company.Vertexes;
+package homework3.task1.Vertexes;
 
 public class Vertex {
     public double x, y;

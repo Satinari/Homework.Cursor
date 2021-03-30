@@ -1,4 +1,4 @@
-package com.company.Vertexes;
+package homework3.task1.Vertexes;
 
 public class Vertex3D extends Vertex{
     public double z;

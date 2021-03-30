@@ -1,7 +1,7 @@
-package com.company.ThreeDShapes;
+package homework3.task1.ThreeDShapes;
 
-import com.company.AbstractClases.SpaceShape;
-import com.company.Vertexes.Vertex3D;
+import homework3.task1.AbstractClases.SpaceShape;
+import homework3.task1.Vertexes.Vertex3D;
 
 public class SquarePyramid extends SpaceShape {
     public SquarePyramid (Vertex3D vertexOne, double width, double height)

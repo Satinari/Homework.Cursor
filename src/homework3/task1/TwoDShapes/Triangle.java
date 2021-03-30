@@ -1,7 +1,7 @@
-package com.company.TwoDShapes;
+package homework3.task1.TwoDShapes;
 
-import com.company.AbstractClases.PlaneShape;
-import com.company.Vertexes.Vertex;
+import homework3.task1.AbstractClases.PlaneShape;
+import homework3.task1.Vertexes.Vertex;
 
 public class Triangle extends PlaneShape {
     public Triangle(Vertex v1, Vertex v2, Vertex v3){

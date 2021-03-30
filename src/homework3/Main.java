@@ -1,14 +1,14 @@
-package com.company;
+package homework3;
 
-import com.company.AbstractClases.Shape;
-import com.company.ThreeDShapes.Cuboid;
-import com.company.ThreeDShapes.Sphere;
-import com.company.ThreeDShapes.SquarePyramid;
-import com.company.TwoDShapes.Circle;
-import com.company.TwoDShapes.Rectangle;
-import com.company.TwoDShapes.Triangle;
-import com.company.Vertexes.Vertex;
-import com.company.Vertexes.Vertex3D;
+import homework3.task1.AbstractClases.Shape;
+import homework3.task1.ThreeDShapes.Cuboid;
+import homework3.task1.ThreeDShapes.Sphere;
+import homework3.task1.ThreeDShapes.SquarePyramid;
+import homework3.task1.TwoDShapes.Circle;
+import homework3.task1.TwoDShapes.Rectangle;
+import homework3.task1.TwoDShapes.Triangle;
+import homework3.task1.Vertexes.Vertex;
+import homework3.task1.Vertexes.Vertex3D;
 
 public class Main {
 
