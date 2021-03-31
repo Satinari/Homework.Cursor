@@ -13,6 +13,9 @@ import homework3.task1.Vertexes.Vertex3D;
 public class Main {
 
     public static void main(String[] args) {
+
+        //TASK 1
+        
         Shape[] array = new Shape[6];
         array[0] = new Triangle(new Vertex(10.0, 11.0), new Vertex(12.0, 13.0), new Vertex(14.0, 25.0));
         array[1] = new Circle(new Vertex(1.0, 1.0), 5);
@@ -24,5 +27,6 @@ public class Main {
         for (int i = 0; i < array.length; i++) {
             array[i].displayInfo();
         }
+
     }
 }
