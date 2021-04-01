@@ -8,7 +8,7 @@ public class Main {
         numbers.add(3);
         numbers.add(4);
         System.out.println(numbers.getArrayList());
-        System.out.println("Smallest number is: " + numbers.smallest());
-        System.out.println("Largest number is: " + numbers.largest());
+        numbers.largest();
+        numbers.smallest();
     }
 }
