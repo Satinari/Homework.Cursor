@@ -12,11 +12,6 @@ public class Sphere extends SpaceShape {
         area = getArea(r);
     }
 
-    public  void  displayInfo(){
-        System.out.println("Shape: Sphere" + ", vertex: " + arrayOfVertexes3D[0].x + " " + arrayOfVertexes3D[0].y + " " + arrayOfVertexes3D[0].z +
-                ", Volume: " + volume + ", Area: " + area);
-    }
-
     public double getArea(double r){
         double area;
         area = 4*Math.PI*Math.pow(r, 2);

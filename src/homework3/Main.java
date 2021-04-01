@@ -25,7 +25,7 @@ public class Main {
         array[5] = new SquarePyramid(new Vertex3D(1.0, 1.0, 1.0), 5, 6);
 
         for (int i = 0; i < array.length; i++) {
-            array[i].displayInfo();
+            System.out.println(array[i].toString());
         }
 
     }

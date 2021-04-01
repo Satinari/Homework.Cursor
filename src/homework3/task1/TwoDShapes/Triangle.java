@@ -45,4 +45,12 @@ public class Triangle extends PlaneShape {
     public double getArea() {
         return area;
     }
+
+    @Override
+    public String toString() {
+        return "Shape: Triangle" + ", vertex 1: " + arrayOfVertexes[0].x + " " + arrayOfVertexes[0].y +
+                ", vertex 2: " + arrayOfVertexes[1].x + " " + arrayOfVertexes[1].y +
+                ", vertex 3: " + arrayOfVertexes[2].x + " " + arrayOfVertexes[2].y +
+                ", Perimeter: " + perimeter + ", Area: " + area;
+    }
 }

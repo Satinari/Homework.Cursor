@@ -4,5 +4,4 @@ import homework3.task1.Interfaces.AreaMeasurable;
 
 public abstract class Shape implements AreaMeasurable {
     public double area;
-    public abstract void displayInfo();
 }

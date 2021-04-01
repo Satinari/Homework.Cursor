@@ -12,11 +12,6 @@ public class Rectangle extends PlaneShape {
 
     }
 
-    public  void  displayInfo(){
-        System.out.println("Shape: Rectangle" + ", vertex 1: " + arrayOfVertexes[0].x + " " + arrayOfVertexes[0].y +
-                ", Perimeter: " + perimeter + ", Area: " + area);
-    }
-
     public double getPerimeter(int width, int height){
         double sum = (width + height)*2;
         return sum;

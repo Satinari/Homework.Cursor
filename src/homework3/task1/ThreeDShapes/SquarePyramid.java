@@ -13,11 +13,6 @@ public class SquarePyramid extends SpaceShape {
         area = getArea(width, height, s);
     }
 
-    public  void  displayInfo(){
-        System.out.println("Shape: SquarePyramid" + ", vertex: " + arrayOfVertexes3D[0].x + " " + arrayOfVertexes3D[0].y + " " + arrayOfVertexes3D[0].z +
-                ", Volume: " + volume + ", Area: " + area);
-    }
-
     public double getArea(double width, double height, double s){
         double area;
         area = ((2*width*s)+(width*width))*4;

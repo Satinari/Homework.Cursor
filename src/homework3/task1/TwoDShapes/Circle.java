@@ -12,11 +12,6 @@ public class Circle extends PlaneShape {
         area = getArea(r);
     }
 
-    public  void  displayInfo(){
-        System.out.println("Shape: Circle" + ", vertex: " + arrayOfVertexes[0].x + " " + arrayOfVertexes[0].y +
-                ", Perimeter: " + perimeter + ", Area: " + area);
-    }
-
     public double getArea(double r){
         double area;
         area = Math.PI*Math.pow(r, 2);
