@@ -1,20 +1,13 @@
 package homtwork4;
 
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Collections;
 
-public class MyList <T extends Number & Comparable> {
+public class MyList <T extends Number & Comparable<? super T>>{
     private ArrayList<T> arrayList;
-    private Comparator<T> comparator;
 
     public MyList() {
         this.arrayList = new ArrayList<>();
-        this.comparator = new Comparator<T>() {
-            @Override
-            public int compare(T o1, T o2) {
-                return o1.compareTo(o2);
-            }
-        };
     }
 
     public void add(T value) {
@@ -26,12 +19,12 @@ public class MyList <T extends Number & Comparable> {
     }
 
     public void largest() {
-        arrayList.sort(comparator);
+        Collections.sort(arrayList);
         System.out.println("Largest number is "+ arrayList.get(arrayList.size() -1));
     }
 
     public void smallest() {
-        arrayList.sort(comparator);
+        Collections.sort(arrayList);
         System.out.println("Smallest number is "+ arrayList.get(0));
     }
 }
