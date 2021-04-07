@@ -46,7 +46,6 @@ public class LinkedListStack {
         while (temp != null) {
             System.out.format("%d ", temp.value);
             temp = temp.next;
-
         }
         return "";
     }
