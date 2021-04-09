@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Reader {
-    public String amountOfAllChars() {
+    public void amountOfAllChars() {
         Scanner scanner = new Scanner(System.in);
         String string = scanner.nextLine();
         System.out.println("The string is - " + string);
@@ -43,7 +43,6 @@ public class Reader {
         System.out.println("Amount of numbers: " + number);
         System.out.println("Amount of punctuation marks: " + mark);
 
-        return "";
     }
 }
 
