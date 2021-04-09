@@ -20,21 +20,26 @@ public class Main {
 
         //LinkedListQueue
         System.out.println("\n");
-        LinkedListQueue stack = new LinkedListQueue();
-        stack.push(20);
-        stack.push(40);
-        stack.push(70);
-        stack.push(50);
-        stack.push(90);
-        stack.push(110);
-        stack.push(30);
-        System.out.println("LinkedListQueue:");
-        System.out.println(stack.toString());
-        System.out.println("Removed element : "+ stack.pop());
-        stack.push(170);
-        System.out.println(stack.toString());
-        System.out.println("Removed element : "+ stack.pop());
-        System.out.println(stack.toString());
-
+        LinkedListQueue queue = new LinkedListQueue();
+        System.out.println("LinkedListQueue: ");
+        System.out.println(queue.toString());
+        queue.enqueue(6);
+        System.out.println(queue.toString());
+        queue.dequeue();
+        queue.enqueue(3);
+        queue.enqueue(99);
+        queue.enqueue(56);
+        System.out.println(queue.toString());
+        queue.dequeue();
+        queue.enqueue(43);
+        System.out.println(queue.toString());
+        queue.dequeue();
+        queue.enqueue(89);
+        queue.enqueue(77);
+        System.out.println(queue.toString());
+        queue.dequeue();
+        queue.enqueue(32);
+        queue.enqueue(232);
+        System.out.println(queue.toString());
     }
 }

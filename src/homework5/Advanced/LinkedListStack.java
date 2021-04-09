@@ -12,10 +12,7 @@ public class LinkedListStack {
         head = null;
     }
 
-    public int pop() throws LinkedListEmptyException {
-        if (head == null) {
-            throw new LinkedListEmptyException();
-        }
+    public int pop() {
         int value = head.value;
         head = head.next;
         return value;
@@ -26,18 +23,6 @@ public class LinkedListStack {
         head = new Node();
         head.value = value;
         head.next = oldHead;
-    }
-
-    class LinkedListEmptyException extends RuntimeException {
-        private static final long serialVersionUID = 1L;
-
-        public LinkedListEmptyException() {
-            super();
-        }
-
-        public LinkedListEmptyException(String message) {
-            super(message);
-        }
     }
 
     @Override
