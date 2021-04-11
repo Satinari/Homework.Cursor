@@ -1,60 +1,64 @@
 package homework5.Advanced;
 
-public class LinkedListQueue {
-    private Node front, rear;
-    private int currentSize;
+public class LinkedListQueue <T> {
+    private Node head;
+    private Node tail;
+    private int size;
 
-    private class Node
-    {
-        int data;
+    public LinkedListQueue() {
+        this.head = null;
+        this.tail = null;
+        this.size = 0;
+    }
+
+    public int size() {
+        return size;
+    }
+
+    private class Node {
+        T value;
         Node next;
     }
 
-    public LinkedListQueue()
-    {
-        front = null;
-        rear = null;
-        currentSize = 0;
+    public boolean isEmpty() {
+        return size == 0;
     }
 
-    public boolean isEmpty()
-    {
-        return (currentSize == 0);
+    public T dequeue() {
+        if (isEmpty()) {
+            throw new EmptyQueueException();
+        }
+        T value = head.value;
+        head = head.next;
+        size--;
+        return value;
     }
 
-    public int dequeue()
-    {
-        int data = front.data;
-        front = front.next;
-        if (isEmpty())
-        {
-            rear = null;
+    public void enqueue(T element) {
+        Node oldTail = tail;
+        tail = new Node();
+        tail.value = element;
+        tail.next = null;
+        if (isEmpty()) {
+            head = tail;
+        } else {
+            oldTail.next = tail;
         }
-        currentSize--;
-        System.out.println(data+ " removed from the queue");
-        return data;
-    }
-
-    public void enqueue(int data)
-    {
-        Node oldRear = rear;
-        rear = new Node();
-        rear.data = data;
-        rear.next = null;
-        if (isEmpty())
-        {
-            front = rear;
-        }
-        else
-        {
-            oldRear.next = rear;
-        }
-        currentSize++;
-        System.out.println(data+ " added to the queue");
+        size++;
     }
 
     @Override
     public String toString() {
-        return "In queue now: " + currentSize;
+        StringBuilder stringBuilder = new StringBuilder();
+        Node nextNode = head;
+        for (int i = 0; i < size; i++) {
+            if (i == size - 1) {
+                stringBuilder.append(nextNode.value);
+            } else {
+                stringBuilder.append(nextNode.value).append(", ");
+            }
+            nextNode = nextNode.next;
+        }
+        return "In queue now: [" + stringBuilder.toString() + ']';
     }
 }

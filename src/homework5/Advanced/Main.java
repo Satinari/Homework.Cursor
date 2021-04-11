@@ -4,23 +4,25 @@ public class Main {
     public static void main(String args[])
     {
         //LinkedListStack
-        LinkedListStack lls=new LinkedListStack();
+        LinkedListStack<Integer> lls=new LinkedListStack<>();
         lls.push(20);
         lls.push(50);
         lls.push(80);
         lls.push(40);
         lls.push(60);
         lls.push(75);
-        System.out.println("LinkedListStack: ");
         System.out.println(lls.toString());
         System.out.println("Element removed from LinkedList: "+lls.pop());
+        System.out.println(lls.toString());
         System.out.println("Element removed from LinkedList: "+lls.pop());
+        System.out.println(lls.toString());
         lls.push(10);
         System.out.println("Element removed from LinkedList: "+lls.pop());
+        System.out.println(lls.toString());
 
         //LinkedListQueue
         System.out.println("\n");
-        LinkedListQueue queue = new LinkedListQueue();
+        LinkedListQueue<Integer> queue = new LinkedListQueue<>();
         System.out.println("LinkedListQueue: ");
         System.out.println(queue.toString());
         queue.enqueue(6);
