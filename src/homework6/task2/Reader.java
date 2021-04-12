@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 
 public class Reader {
     public void readerFromUrl() throws IOException {
@@ -17,5 +18,8 @@ public class Reader {
         }
         br.close();
         fr.close();
+
+        HashMap<String, Integer> hashMap = new HashMap<>();
+        
     }
 }
