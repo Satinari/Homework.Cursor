@@ -1,25 +1,24 @@
 package homework7;
-import static homework7.Continent.*;
 
 public enum Country {
-    UKRAINE("Ukraine", EUROPE),
-    POLAND("Poland", EUROPE),
-    FRANCE("France", EUROPE),
-    CHINA("China", ASIA),
-    INDIA("India", ASIA),
-    ISRAEL("Israel", ASIA),
-    EGYPT("Egypt", AFRICA),
-    ALGERIA("Algeria", AFRICA),
-    ANGOLA("Angola", AFRICA),
-    USA("USA", NORTH_AMERICA),
-    CANADA("Canada", NORTH_AMERICA),
-    MEXICO("Mexico", NORTH_AMERICA),
-    BRAZIL("Brazil", SOUTH_AMERICA),
-    ARGENTINA("Argentina", SOUTH_AMERICA),
-    BOLIVIA("Bolivia", SOUTH_AMERICA),
-    AUSTRALIA("Australia", OCEANIA),
-    FIJI("Fiji", OCEANIA),
-    NEW_ZEALAND("New Zealand", OCEANIA);
+    UKRAINE("Ukraine", Continent.EUROPE),
+    POLAND("Poland", Continent.EUROPE),
+    FRANCE("France", Continent.EUROPE),
+    CHINA("China", Continent.ASIA),
+    INDIA("India", Continent.ASIA),
+    ISRAEL("Israel", Continent.ASIA),
+    EGYPT("Egypt", Continent.AFRICA),
+    ALGERIA("Algeria", Continent.AFRICA),
+    ANGOLA("Angola", Continent.AFRICA),
+    USA("USA", Continent.NORTH_AMERICA),
+    CANADA("Canada", Continent.NORTH_AMERICA),
+    MEXICO("Mexico", Continent.NORTH_AMERICA),
+    BRAZIL("Brazil", Continent.SOUTH_AMERICA),
+    ARGENTINA("Argentina", Continent.SOUTH_AMERICA),
+    BOLIVIA("Bolivia", Continent.SOUTH_AMERICA),
+    AUSTRALIA("Australia", Continent.OCEANIA),
+    FIJI("Fiji", Continent.OCEANIA),
+    NEW_ZEALAND("New Zealand", Continent.OCEANIA);
 
     private final String countryName;
     private final Continent continent;
