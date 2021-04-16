@@ -22,7 +22,8 @@ public class Reader {
         BufferedReader br = new BufferedReader(fr);
         String line;
         while((line = br.readLine()) != null){
-            String word = src.replaceAll("[^а-яёА-ЯЁ]", "");
+            String word = line.replaceAll("[. , ! ; :]", " ");
+            System.out.println(word);
             if (words.containsKey(word)) {
                 int valueInt = words.get(word) + 1;
                 words.put(word, valueInt);
