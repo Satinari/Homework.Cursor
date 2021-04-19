@@ -29,7 +29,7 @@ public class WordIterator implements Iterator<WordPart>{
     @Override
     public WordPart next() throws NoSuchElementException {
         if (wordPartsCount <= 0) {
-            throw new NoSuchElementException("No more elements in this word!");
+            throw new NoSuchElementException("No more elements in this word! \n");
         }
 
         try {
