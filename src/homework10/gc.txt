@@ -1,0 +1,29 @@
+[0.011s][info][gc] Using G1
+[0.012s][debug][gc] ConcGCThreads: 1 offset 8
+[0.012s][debug][gc] ParallelGCThreads: 4
+[0.012s][debug][gc] Initialize mark stack with 4096 chunks, maximum 524288
+[1.555s][info ][gc] GC(0) Pause Young (Concurrent Start) (G1 Humongous Allocation) 54M->51M(124M) 137.077ms
+[1.555s][info ][gc] GC(1) Concurrent Cycle
+[1.607s][debug][gc] GC(1) Reclaimed 34 empty regions
+[1.607s][info ][gc] GC(1) Pause Remark 75M->41M(124M) 0.437ms
+[1.666s][info ][gc] GC(1) Pause Cleanup 41M->41M(124M) 0.050ms
+[1.667s][info ][gc] GC(1) Concurrent Cycle 112.179ms
+[2.347s][info ][gc] GC(2) Pause Young (Concurrent Start) (G1 Humongous Allocation) 41M->41M(124M) 133.600ms
+[2.347s][info ][gc] GC(3) Concurrent Cycle
+[2.396s][debug][gc] GC(3) Reclaimed 16 empty regions
+[2.396s][info ][gc] GC(3) Pause Remark 77M->61M(124M) 0.919ms
+[2.488s][info ][gc] GC(3) Pause Cleanup 61M->61M(124M) 0.098ms
+[2.490s][info ][gc] GC(3) Concurrent Cycle 142.063ms
+[3.212s][info ][gc] GC(4) Pause Young (Concurrent Start) (G1 Humongous Allocation) 61M->61M(124M) 1.141ms
+[3.212s][info ][gc] GC(5) Concurrent Cycle
+[3.213s][info ][gc] GC(6) Pause Young (Normal) (G1 Humongous Allocation) 61M->61M(124M) 0.266ms
+[3.213s][debug][gc] GC(7) Clear Next Bitmap 0.085ms
+[3.258s][info ][gc] GC(7) Pause Full (G1 Humongous Allocation) 61M->37M(124M) 44.607ms
+[3.258s][info ][gc] GC(5) Concurrent Cycle 45.409ms
+[4.798s][info ][gc] GC(8) Pause Young (Concurrent Start) (G1 Humongous Allocation) 90M->90M(124M) 1.565ms
+[4.798s][info ][gc] GC(9) Concurrent Cycle
+[4.800s][info ][gc] GC(10) Pause Young (Normal) (G1 Humongous Allocation) 90M->90M(124M) 0.281ms
+[4.800s][debug][gc] GC(11) Clear Next Bitmap 0.161ms
+[4.866s][info ][gc] GC(11) Pause Full (G1 Humongous Allocation) 90M->54M(124M) 65.987ms
+[4.930s][info ][gc] GC(12) Pause Full (G1 Humongous Allocation) 54M->54M(124M) 64.068ms
+[4.932s][info ][gc] GC(9) Concurrent Cycle 133.924ms
