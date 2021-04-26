@@ -5,20 +5,11 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Reader {
-    public void amountOfAllChars() {
-        Scanner scanner = new Scanner(System.in);
-        String string = scanner.nextLine();
+    String string = new Scanner(System.in).nextLine();
+
+    public void amountOfAllChars(){
+
         System.out.println("The string is - " + string);
-
-        String amountOfPunctuationMarks = string.replaceAll("\\p{Punct}", ""); //Amount of punctuation marks
-        int mark = string.length() - amountOfPunctuationMarks.length();
-
-        String amountOfNumbers = amountOfPunctuationMarks.replaceAll("[0-9]", ""); //Amount of numbers
-        int number = amountOfPunctuationMarks.length() - amountOfNumbers.length();
-
-        String amountOfSpaces = amountOfNumbers.replaceAll(" ", ""); //Amount of spaces
-        int space = amountOfNumbers.length() - amountOfSpaces.length();
-        string = amountOfSpaces.toLowerCase();
 
         HashMap<Character, Integer> countOfChars = new HashMap<>();
         int counter;
@@ -26,7 +17,7 @@ public class Reader {
 
         for (int i = 0; i < string.length(); i++) {
             counter = 0;
-            for (int j = 0; j < string.length(); j++) {
+            for (int j = 1; j < string.length(); j++) {
                 if (string.charAt(i) == string.charAt(j)) {
                     counter++;
                 }
@@ -34,15 +25,26 @@ public class Reader {
             }
         }
 
-        for (Map.Entry entry : countOfChars.entrySet()) {
+        for (Map.Entry<Character, Integer> entry : countOfChars.entrySet()) {
             System.out.println("Letter " + entry.getKey() + " - "
                     + entry.getValue());
         }
         System.out.println("Total amount of letters: " + string.length());
-        System.out.println("Amount of spaces: " + space);
-        System.out.println("Amount of numbers: " + number);
-        System.out.println("Amount of punctuation marks: " + mark);
+        System.out.println("Amount of spaces: " + amountOfSpaces());
+        System.out.println("Amount of numbers: " + amountOfNumbers());
+        System.out.println("Amount of punctuation marks: " + amountOfPunctuationMarks());
+    }
 
+    public int amountOfPunctuationMarks() {
+        return string.length() - string.replaceAll("\\p{Punct}", "").length(); //Amount of punctuation marks
+    }
+
+    public int amountOfNumbers() {
+        return string.length() - string.replaceAll("[0-9]", "").length(); //Amount of numbers
+    }
+
+    public int amountOfSpaces() {
+        return string.length() - string.replaceAll(" ", "").length(); //Amount of spaces
     }
 }
 
