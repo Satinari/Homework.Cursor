@@ -9,6 +9,7 @@ public class SafeDivision {
         int  a = scanner.nextInt();
         System.out.print("Enter B: ");
         int b = scanner.nextInt();
+        scanner.close();
         while (true) {
             try {
                 result = a / b;
